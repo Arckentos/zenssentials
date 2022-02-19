@@ -472,8 +472,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .top-0 {
   top: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.-right-10 {
+  right: -2.5rem;
 }
 
 .mt-4 {
@@ -520,16 +532,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[600px\] {
+  height: 600px;
 }
 
-.h-1\/2 {
-  height: 50%;
+.h-min {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .h-2\/3 {
   height: 66.666667%;
+}
+
+.max-h-96 {
+  max-height: 24rem;
 }
 
 .w-full {
@@ -562,6 +580,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
+}
+
+.origin-center {
+  transform-origin: center;
 }
 
 .cursor-pointer {
@@ -655,11 +677,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(209 250 229 / var(--tw-bg-opacity));
 }
 
-.bg-green-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -734,10 +751,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center {
   text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .text-justify {
@@ -902,6 +915,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:mt-24 {
     margin-top: 6rem;
   }
@@ -918,12 +935,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     aspect-ratio: auto;
   }
 
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
   .lg\:h-full {
     height: 100%;
   }
 
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:w-1\/4 {
@@ -954,10 +979,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 10rem;
   }
 
-  .lg\:p-16 {
-    padding: 4rem;
-  }
-
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -982,6 +1003,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-left {
     text-align: left;
+  }
+
+  .lg\:text-right {
+    text-align: right;
   }
 
   .lg\:text-8xl {
