@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen'ssentials</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="w-full h-auto @relative">
+    <header class="w-full h-auto pt-8 pb-6 px-14 lg:px-24 bg-emerald-50">
+        <nav class="flex items-center justify-between lg:items-start">
+            <div class="flex items-center gap-4">
+                <span class="w-12 h-12 bg-white rounded-full cursor-pointer"></span>
+                <span class="text-3xl lg:hidden text-emerald-900">Zen'ssentials</span>
+                <ul class="hidden gap-6 list-none lg:flex">
+                    <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Our Products</li>
+                    <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Suggestions</li>
+                    <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Brand History</li>
+                </ul>
+            </div>
+            <div class="items-center hidden gap-8 lg:flex">                
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 transition ease-in-out cursor-pointer hover:scale-110 text-emerald-800" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                </svg>
+                <a class="text-lg transition ease-in-out cursor-pointer hover:scale-110 text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Log In</a>
+                <button class="px-8 py-2 text-lg transition ease-in-out border-4 rounded-lg cursor-pointer hover:scale-110 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Sign Up</button>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 transition ease-in-out cursor-pointer text-emerald-800 hover:scale-110 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="toggleMobileMenu()">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            
+        </nav>
+    </header>
+    
+    <div class="absolute top-0 w-full px-8 py-4">
+        <div class="w-full h-auto px-6 py-4 rounded-xl bg-emerald-100" id="mobile_menu">
+            <div class="flex items-center justify-between w-full">
+                <span class="w-12 h-12 bg-white rounded-full cursor-pointer"></span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 transition ease-in-out cursor-pointer hover:scale-110 text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="toggleMobileMenu()">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+            </div>
+            <ul class="mt-4 list-none">
+                <li class="p-2 text-3xl cursor-pointer text-emerald-800/75 hover:text-emerald-800 hover:bg-emerald-200/50 rounded-xl"><a href="#our_products">Our products</a></li>
+                <li class="p-2 text-3xl cursor-pointer text-emerald-800/75 hover:text-emerald-800 hover:bg-emerald-200/50 rounded-xl"><a href="#suggestions">Suggestions</a></li>
+                <li class="p-2 text-3xl cursor-pointer text-emerald-800/75 hover:text-emerald-800 hover:bg-emerald-200/50 rounded-xl"><a href="#brand_history">Brand history</a></li>
+                <li class="p-2 text-3xl cursor-pointer text-emerald-800/75 hover:text-emerald-800 hover:bg-emerald-200/50 rounded-xl"><a href="#best_sellings">Best-Sellings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="w-full h-full">
+        <div class="flex flex-col w-full h-screen gap-10 lg:gap-4 lg:flex-row px-14 lg:px-24 bg-emerald-50">
+            <div class="w-auto pt-10 lg:pl-20">
+                <h1 class="text-6xl lg:text-8xl text-emerald-900">Welcome on <br> Zen'ssentials!</h1>                
+                <h2 class="mt-10 ml-10 text-4xl text-right text-emerald-900">The essential oil brand<br> made for YOU</h2>
+            </div>
+            <div class="w-full lg:h-full h-1/2 lg:p-16 lg:w-1/2">
+                <div class="w-full h-full bg-green-100 rounded-xl"></div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto pt-24 pb-32 bg-white px-14 lg:px-24">
+            <h2 class="text-5xl text-center lg:text-left lg:text-7xl text-emerald-800">How our Oils are made?</h2>
+
+            <div class="flex flex-col gap-10 mt-10 lg:pr-20 lg:pl-16">
+                <p class="text-3xl font-normal text-justify lg:text-left lg:text-4xl text-emerald-700">Our oils are made from organic plants. They are made to have the most benefical effects for your skin. We only made organic products. Our laboratory is actively researching new oils to satisfy you as much as possible.</p>
+                <p class="text-3xl font-normal text-justify lg:text-left lg:text-4xl text-emerald-700">We test our oils extensively before offerring it and putting it on sale. Each allergy is detected and listed on the product sheet of our oils.</p>
+            </div>
+        </div>
+
+        <div class="w-full h-auto px-24 py-16 bg-emerald-50" id="best_sellings">
+            <h2 class="text-5xl text-center lg:text-left lg:text-7xl text-emerald-800">Our Best-Sellings</h2>
+            <div class="flex flex-col items-center w-full gap-10 mt-12 lg:items-stretch lg:mt-24 lg:gap-40 h-2/3 lg:flex-row">
+                <div class="flex flex-col w-5/6 gap-4 lg:w-1/4 justify-startfy-between group">
+                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1572495754162-78a92305ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1279&q=80" alt="rose parfume" srcset="">
+                    <span class="text-4xl font-medium lg:text-5xl text-emerald-800/75 group-hover:text-emerald-800/90">8,40€</span>
+                    <span class="text-2xl lg:text-3xl text-emerald-700/75 group-hover:text-emerald-700/90">Intense rose oil</span>
+                    <button class="px-6 py-2 text-xl transition ease-in-out border-4 rounded-full cursor-pointer lg:text-lg lg:px-8 hover:scale-105 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Add to cart</button>                
+                </div>
+                <div class="flex flex-col w-5/6 gap-4 lg:w-1/4 justify-startfy-between group">
+                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1597768822458-8ec5266f8953?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="rose parfume" srcset="">
+                    <span class="text-4xl font-medium lg:text-5xl text-emerald-800/75 group-hover:text-emerald-800/90">10,20€</span>
+                    <span class="text-2xl lg:text-3xl text-emerald-700/75 group-hover:text-emerald-700/90">Lavanda oil</span>
+                    <button class="px-6 py-2 text-xl transition ease-in-out border-4 rounded-full cursor-pointer lg:text-lg lg:px-8 hover:scale-105 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Add to cart</button>                
+                </div>
+                <div class="flex flex-col w-5/6 gap-4 lg:w-1/4 justify-startfy-between group">
+                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="rose parfume" srcset="">
+                    <span class="text-4xl font-medium lg:text-5xl text-emerald-800/75 group-hover:text-emerald-800/90">4,50€</span>
+                    <span class="text-2xl lg:text-3xl text-emerald-700/75 group-hover:text-emerald-700/90">Tea Tree oil</span>
+                    <button class="px-6 py-2 text-xl transition ease-in-out border-4 rounded-full cursor-pointer lg:text-lg lg:px-8 hover:scale-105 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Add to cart</button>                
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobile_menu').classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
