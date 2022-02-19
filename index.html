@@ -10,7 +10,7 @@
 </head>
 
 <body class="w-full h-auto @relative">
-    <header class="w-full h-auto pt-8 pb-6 px-14 lg:px-24 bg-emerald-50">
+    <header class="w-full h-auto px-10 pt-8 pb-6 lg:px-24 bg-emerald-50">
         <nav class="flex items-center justify-between lg:items-start">
             <div class="flex items-center gap-4">
                 <span class="w-12 h-12 bg-white rounded-full cursor-pointer"></span>
@@ -19,6 +19,7 @@
                     <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Our Products</li>
                     <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Suggestions</li>
                     <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid">Brand History</li>
+                    <li class="text-lg cursor-pointer text-emerald-800 hover:underline hover:underline-offset-8 hover:decoration-solid"><a href="#best_sellings">Best-Sellings</a></li>
                 </ul>
             </div>
             <div class="items-center hidden gap-8 lg:flex">                
@@ -31,12 +32,11 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 transition ease-in-out cursor-pointer text-emerald-800 hover:scale-110 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="toggleMobileMenu()">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-            
         </nav>
     </header>
     
-    <div class="absolute top-0 hidden w-full px-8 py-4 lg:hidden" id="mobile_menu">
-        <div class="w-full h-auto px-6 py-4 rounded-xl bg-emerald-100" >
+    <div class="absolute top-0 hidden w-full px-6 py-4 lg:hidden" id="mobile_menu">
+        <div class="w-full h-auto px-4 py-4 rounded-xl bg-emerald-100" >
             <div class="flex items-center justify-between w-full">
                 <span class="w-12 h-12 bg-white rounded-full cursor-pointer"></span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 transition ease-in-out cursor-pointer hover:scale-110 text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" onclick="toggleMobileMenu()">
@@ -53,9 +53,9 @@
     </div>
 
     <main class="w-full h-full">
-        <div class="flex flex-col w-full h-screen gap-10 lg:gap-4 lg:flex-row px-14 lg:px-24 bg-emerald-50">
+        <div class="flex flex-col w-full h-screen gap-10 px-10 lg:gap-4 lg:flex-row lg:px-24 bg-emerald-50">
             <div class="w-auto pt-10 lg:pl-20">
-                <h1 class="text-6xl lg:text-8xl text-emerald-900">Welcome on <br> Zen'ssentials!</h1>                
+                <h1 class="text-5xl lg:text-8xl text-emerald-900">Welcome on <br> Zen'ssentials!</h1>                
                 <h2 class="mt-10 ml-10 text-4xl text-right text-emerald-900">The essential oil brand<br> made for YOU</h2>
             </div>
             <div class="w-full lg:h-full h-1/2 lg:p-16 lg:w-1/2">
@@ -63,7 +63,7 @@
             </div>
         </div>
 
-        <div class="w-full h-auto pt-24 pb-32 bg-white px-14 lg:px-24">
+        <div class="w-full h-auto px-10 pt-24 pb-32 bg-white lg:px-24">
             <h2 class="text-5xl text-center lg:text-left lg:text-7xl text-emerald-800">How our Oils are made?</h2>
 
             <div class="flex flex-col gap-10 mt-10 lg:pr-20 lg:pl-16">
@@ -72,23 +72,23 @@
             </div>
         </div>
 
-        <div class="w-full h-auto px-24 py-16 bg-emerald-50" id="best_sellings">
-            <h2 class="text-5xl text-center lg:text-left lg:text-7xl text-emerald-800">Our Best-Sellings</h2>
+        <div class="w-full h-auto px-8 py-16 lg:px-24 bg-emerald-50" id="best_sellings">
+            <h2 class="text-4xl text-center lg:text-left lg:text-7xl text-emerald-800">Our Best-Sellings</h2>
             <div class="flex flex-col items-center w-full gap-10 mt-12 lg:items-stretch lg:mt-24 lg:gap-40 h-2/3 lg:flex-row">
                 <div class="flex flex-col w-5/6 gap-4 lg:w-1/4 justify-startfy-between group">
-                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1572495754162-78a92305ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1279&q=80" alt="rose parfume" srcset="">
+                    <img class="w-full transition aspect-square lg:aspect-auto  ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1572495754162-78a92305ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1279&q=80" alt="rose parfume" srcset="">
                     <span class="text-4xl font-medium lg:text-5xl text-emerald-800/75 group-hover:text-emerald-800/90">8,40€</span>
                     <span class="text-2xl lg:text-3xl text-emerald-700/75 group-hover:text-emerald-700/90">Intense rose oil</span>
                     <button class="px-6 py-2 text-xl transition ease-in-out border-4 rounded-full cursor-pointer lg:text-lg lg:px-8 hover:scale-105 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Add to cart</button>                
                 </div>
                 <div class="flex flex-col w-5/6 gap-4 lg:w-1/4 justify-startfy-between group">
-                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1597768822458-8ec5266f8953?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="rose parfume" srcset="">
+                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl aspect-square lg:aspect-auto h-2/3" src="https://images.unsplash.com/photo-1597768822458-8ec5266f8953?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="rose parfume" srcset="">
                     <span class="text-4xl font-medium lg:text-5xl text-emerald-800/75 group-hover:text-emerald-800/90">10,20€</span>
                     <span class="text-2xl lg:text-3xl text-emerald-700/75 group-hover:text-emerald-700/90">Lavanda oil</span>
                     <button class="px-6 py-2 text-xl transition ease-in-out border-4 rounded-full cursor-pointer lg:text-lg lg:px-8 hover:scale-105 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Add to cart</button>                
                 </div>
                 <div class="flex flex-col w-5/6 gap-4 lg:w-1/4 justify-startfy-between group">
-                    <img class="w-full transition ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="rose parfume" srcset="">
+                    <img class="w-full transition aspect-square lg:aspect-auto  ease-in-out shadow-lg group-hover:scale-[1.02] rounded-2xl h-2/3" src="https://images.unsplash.com/photo-1567922045116-2a00fae2ed03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="rose parfume" srcset="">
                     <span class="text-4xl font-medium lg:text-5xl text-emerald-800/75 group-hover:text-emerald-800/90">4,50€</span>
                     <span class="text-2xl lg:text-3xl text-emerald-700/75 group-hover:text-emerald-700/90">Tea Tree oil</span>
                     <button class="px-6 py-2 text-xl transition ease-in-out border-4 rounded-full cursor-pointer lg:text-lg lg:px-8 hover:scale-105 min-w-min text-emerald-50 bg-emerald-800/50 border-emerald-800/25 hover:bg-emerald-800/75 hover:border-emerald-800/50 hover:text-white">Add to cart</button>                
@@ -96,6 +96,18 @@
             </div>
         </div>
     </main>
+
+    <footer class="flex flex-col gap-2 p-4 bg-white lg:px-24 lg:flex-row lg:justify-between">
+        <p class="text-xl text-left text-emerald-600">
+            Design by <a class="text-emerald-800" href="https://www.instagram.com/guillaume_farbos/">@guillaume_farbos</a>
+        </p>
+        <p class="text-xl text-left text-emerald-600">
+            Build by <a class="text-emerald-800" href="https://github.com/Arckentos">Clément Pauillac</a>
+        </p>
+        <p class="text-xl text-left text-emerald-600">
+            Twitter <a class="text-emerald-800" href="https://twitter.com/ClementPauillac">@ClementPauillac</a>
+        </p>
+    </footer>
 
     <script>
         function toggleMobileMenu() {
